@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        body>header {
+            background: deepskyblue;
+            color: white;
+            width: 100%;
+            height: 20vh;
+            text-align: center;
+        }
+        body>header>h1 {
+            margin-top: 0;
+        }
+        main {
+            flex-grow: 2;
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+        }
+        aside {
+            flex-grow: 1;
+            border: 1px solid blue;
+            padding: 5%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 5px dotted red;
+        }
+        article {
+            border: 3px solid green;
+        }
+        .txt-pic {
+            display: flex;
+            flex-direction: column;
+        }
+        .pic img {
+            border: 1px solid orange;
+            width: 100%;
+        }
+        .txt {
+            border: 1px solid blue;
+            flex-grow: 1;
+        }
+        .pic {
+            border: 1px solid blue;
+            flex-grow: 1;
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Traveller</h1>
+        <h2>My personal blog</h2>
+        <!-- <img src="https://cdn.pixabay.com/photo/2017/07/24/14/07/globus-2534766_1280.png" alt=""> -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <div class="container">
+        <main>
+            <article>
+                <header>
+                    <h1>Article 1</h1>
+                    <p>Author: Jimmy White</p>
+                </header>
+                <div class="txt-pic">
+                    <div class="txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit doloremque velit veniam tempora eaque accusantium et quod minima! Quia maxime ea natus excepturi voluptatum laborum, possimus sit eveniet minima repudiandae repellendus quisquam placeat suscipit consequatur atque. Minus amet a animi reiciendis aut culpa aperiam laborum sed odit? Ab, voluptatem.</p></div>
+                    <div class="pic"><img src="https://cdn.pixabay.com/photo/2020/03/10/04/48/animal-4917802_1280.jpg"  alt=""></div>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>Article 2</h1>
+                    <p>Author: Mark Allen</p>                
+                </header>
+                <div class="txt-pic">
+                    <div class="txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit doloremque velit veniam tempora eaque accusantium et quod minima! Quia maxime ea natus excepturi voluptatum laborum, possimus sit eveniet minima repudiandae repellendus quisquam placeat suscipit consequatur atque. Minus amet a animi reiciendis aut culpa aperiam laborum sed odit? Ab, voluptatem.</p></div>
+                    <div class="pic"><img src="https://cdn.pixabay.com/photo/2018/01/02/09/42/koala-3055832_1280.jpg" al=""></div>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>Article 3</h1>
+                    <p>Author: Steven Hendry</p>                
+                </header>
+                <div class="txt-pic">
+                    <div class="txt"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit doloremque velit veniam tempora eaque accusantium et quod minima! Quia maxime ea natus excepturi voluptatum laborum, possimus sit eveniet minima repudiandae repellendus quisquam placeat suscipit consequatur atque. Minus amet a animi reiciendis aut culpa aperiam laborum sed odit? Ab, voluptatem.</p></div>
+                    <div class="pic"><img src="https://cdn.pixabay.com/photo/2017/04/12/23/14/angkor-2226036_1280.jpg" alt=""></div>
+                </div>
+            </article>
+        </main>
+        <aside>
+            <section>
+                <ul>
+                    <li><a href="#">Jimmy White</a></li>
+                    <li><a href="#">Mark Allen</a></li>
+                    <li><a href="#">Steven Hendry</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui eveniet, facilis placeat reprehenderit eum aliquam reiciendis corrupti. Qui distinctio molestiae totam veritatis numquam esse, et asperiores ex quo dignissimos neque voluptate, iure rem recusandae laborum facere harum perspiciatis aliquid. Repellendus, ipsam expedita. Pariatur natus veniam excepturi beatae neque! Id!</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non repellendus vitae magnam tempora facere. Totam alias tempore possimus repudiandae qui illo officia, obcaecati dolor placeat facilis maiores eveniet provident sed maxime temporibus aperiam, repellat amet reprehenderit ratione nesciunt libero.</p>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p>Coryright example.com</p>
+    </footer>
+</body>
+</html>
