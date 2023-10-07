@@ -29,6 +29,11 @@
             flex-direction: column;
             height: 70vh;
         }
+        header, main, aside, footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         @media (min-width: 720px) {
             .container {
                 flex-direction: row;
@@ -44,14 +49,16 @@
             background: lightsalmon;
             height: 10vh;
         }
+        .title {
+        }
     </style>
 </head>
 <body> 
-    <header></header>
+    <header><div class="title">HEADER</div></header>
     <div class="container">
-        <main></main>
-        <aside></aside>
+        <main><div class="title">MAIN</div></main>
+        <aside><div class="title">ASIDE</div></aside>
     </div>
-    <footer></footer>
+    <footer><div class="title">FOOTER</div></footer>
 </body>
 </html>
